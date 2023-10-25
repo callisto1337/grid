@@ -1,6 +1,6 @@
 {
   "name": "@vuelib/grid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple zero-dependency grid for Vue 3",
   "type": "module",
   "files": [
