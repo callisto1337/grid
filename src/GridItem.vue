@@ -9,8 +9,8 @@ import { getCurrentInstance, computed, CSSProperties } from 'vue';
 import { GridProps } from './';
 
 export interface GridItemProps {
-  size?: number;
-  component?: keyof HTMLElementTagNameMap;
+  size: number;
+  component: string;
 }
 
 const props = withDefaults(defineProps<GridItemProps>(), {

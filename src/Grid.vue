@@ -8,25 +8,27 @@
 import { CSSProperties, computed } from 'vue';
 
 export interface GridProps {
-  spacing: CSSProperties['gap'];
-  columnSpacing: CSSProperties['column-gap'];
-  rowSpacing: CSSProperties['row-gap'];
-  component: keyof HTMLElementTagNameMap;
-  direction: CSSProperties['flex-direction'];
+  spacing: string;
+  columnSpacing: string;
+  rowSpacing: string;
+  component: string;
+  direction: 'column' | 'column-reverse' | 'row' | 'row-reverse';
   columns: number;
-  wrap: CSSProperties['flex-wrap'];
-  justifyContent?: CSSProperties['justify-content'];
-  alignItems?: CSSProperties['align-items'];
+  wrap: 'nowrap' | 'wrap' | 'wrap-reverse';
+  justifyContent: 'space-around' | 'space-between' | 'space-evenly' | 'center' | 'left' | 'start';
+  alignItems: 'start' | 'center' | 'end' | 'stretch';
 }
 
 const props = withDefaults(defineProps<GridProps>(), {
-  spacing: 0,
-  columnSpacing: 0,
-  rowSpacing: 0,
+  spacing: '0px',
+  columnSpacing: '0px',
+  rowSpacing: '0px',
   component: 'div',
   direction: 'row',
   columns: 12,
   wrap: 'wrap',
+  justifyContent: 'start',
+  alignItems: 'start',
 });
 
 const styleProperties = computed<CSSProperties>(() => {
