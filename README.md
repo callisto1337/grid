@@ -22,3 +22,7 @@ npm i @vuelib/grid
 import { Grid, GridItem } from '@vuelib/grid';
 </script>
 ```
+
+## License
+
+[MIT](LICENSE)
