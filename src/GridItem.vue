@@ -21,9 +21,8 @@ const instance = getCurrentInstance();
 const styleProperties = computed<CSSProperties>(() => {
   const parentProps = instance?.parent?.props as unknown as GridProps;
   const columns = parentProps.columns;
-  const spacing = parentProps.spacing;
-  const columnSpacing = parentProps.columnSpacing || spacing;
-  const rowSpacing = parentProps.rowSpacing || spacing;
+  const columnSpacing = parentProps.columnSpacing;
+  const rowSpacing = parentProps.rowSpacing;
 
   const properties: CSSProperties = {
     width: `calc(${(props.size / columns) * 100 + '%'} - ${columnSpacing})`,

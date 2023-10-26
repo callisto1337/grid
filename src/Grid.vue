@@ -8,7 +8,6 @@
 import { CSSProperties, computed } from 'vue';
 
 export interface GridProps {
-  spacing: string;
   columnSpacing: string;
   rowSpacing: string;
   component: string;
@@ -20,7 +19,6 @@ export interface GridProps {
 }
 
 const props = withDefaults(defineProps<GridProps>(), {
-  spacing: '0px',
   columnSpacing: '0px',
   rowSpacing: '0px',
   component: 'div',
@@ -32,9 +30,8 @@ const props = withDefaults(defineProps<GridProps>(), {
 });
 
 const styleProperties = computed<CSSProperties>(() => {
-  const spacing = props.spacing;
-  const columnSpacing = props.columnSpacing || spacing;
-  const rowSpacing = props.rowSpacing || spacing;
+  const columnSpacing = props.columnSpacing;
+  const rowSpacing = props.rowSpacing;
 
   const properties: CSSProperties = {
     flexDirection: props.direction,
