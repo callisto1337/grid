@@ -27,24 +27,24 @@ import { Grid, GridItem } from '@vuelib/grid';
 
 ### Grid
 
-|       Name       |                                         Type                                         | Default |
-|:----------------:|:------------------------------------------------------------------------------------:|:-------:|
-|    `spacing`     |                                       `string`                                       |  `0px`  |
-| `columnSpacing`  |                                       `string`                                       |  `0px`  |
-|   `rowSpacing`   |                                       `string`                                       |  `0px`  |
-|   `component`    |                                       `string`                                       |  `div`  |
-|   `direction`    |               `'column' \| 'column-reverse' \| 'row' \| 'row-reverse'`               |  `row`  |
-|    `columns`     |                                       `number`                                       |  `12`   |
-|      `wrap`      |                        `'nowrap' \| 'wrap' \| 'wrap-reverse'`                        | `wrap`  |
-| `justifyContent` | `'start \| 'center' \| 'end' \| 'space-around' \| 'space-between' \| 'space-evenly'` | `start` |
-|   `alignItems`   |                     `'start' \| 'center' \| 'end' \| 'stretch'`                      | `start` |
+|       Name       |                                         Type                                         |  Default  |
+|:----------------:|:------------------------------------------------------------------------------------:|:---------:|
+|    `spacing`     |                                       `string`                                       |  `'0px'`  |
+| `columnSpacing`  |                                       `string`                                       |  `'0px'`  |
+|   `rowSpacing`   |                                       `string`                                       |  `'0px'`  |
+|   `component`    |                                       `string`                                       |  `'div'`  |
+|   `direction`    |               `'column' \| 'column-reverse' \| 'row' \| 'row-reverse'`               |  `'row'`  |
+|    `columns`     |                                       `number`                                       |   `12`    |
+|      `wrap`      |                        `'nowrap' \| 'wrap' \| 'wrap-reverse'`                        | `'wrap'`  |
+| `justifyContent` | `'start \| 'center' \| 'end' \| 'space-around' \| 'space-between' \| 'space-evenly'` | `'start'` |
+|   `alignItems`   |                     `'start' \| 'center' \| 'end' \| 'stretch'`                      | `'start'` |
 
 ### GridItem
 
 |    Name     |   Type   | Default |
 |:-----------:|:--------:|:-------:|
 |   `size`    | `number` |   `1`   |
-| `component` | `string` |  `div`  |
+| `component` | `string` | `'div'` |
 
 ## License
 
