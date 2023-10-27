@@ -1,10 +1,18 @@
 {
   "name": "@vuelib/grid",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Simple zero-dependency grid for Vue 3",
   "type": "module",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "vue",
+    "vuejs",
+    "grid",
+    "flex",
+    "column",
+    "layout"
   ],
   "scripts": {
     "build": "vite build && vue-tsc"
