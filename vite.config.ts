@@ -26,7 +26,8 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      outDir: 'dist/types'
+      outDir: 'dist/types',
+      rollupTypes: true
     }),
   ],
 });

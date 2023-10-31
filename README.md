@@ -12,10 +12,10 @@ npm i @vuelib/grid
 
 ```vue
 <template>
-  <Grid column-spacing="10px">
-    <GridItem :size="4">First item</GridItem>
-    <GridItem :size="4">Second item</GridItem>
-    <GridItem :size="4">Third item</GridItem>
+  <Grid :spacing="['8px', '16px']">
+    <GridItem :size="6">First item</GridItem>
+    <GridItem :size="6">Second item</GridItem>
+    <GridItem :size="12">Third item</GridItem>
   </Grid>
 </template>
 
@@ -28,23 +28,20 @@ import { Grid, GridItem } from '@vuelib/grid';
 
 ### Grid
 
-|       Name       |                                         Type                                         |  Default  |
-|:----------------:|:------------------------------------------------------------------------------------:|:---------:|
-| `columnSpacing`  |                                       `string`                                       |  `'0px'`  |
-|   `rowSpacing`   |                                       `string`                                       |  `'0px'`  |
-|   `component`    |                                       `string`                                       |  `'div'`  |
-|   `direction`    |               `'column' \| 'column-reverse' \| 'row' \| 'row-reverse'`               |  `'row'`  |
-|    `columns`     |                                       `number`                                       |   `12`    |
-|      `wrap`      |                        `'nowrap' \| 'wrap' \| 'wrap-reverse'`                        | `'wrap'`  |
-| `justifyContent` | `'start \| 'center' \| 'end' \| 'space-around' \| 'space-between' \| 'space-evenly'` | `'start'` |
-|   `alignItems`   |                     `'start' \| 'center' \| 'end' \| 'stretch'`                      | `'start'` |
+|     Name     |                         Type                          |   Default   |
+|:------------:|:-----------------------------------------------------:|:-----------:|
+|  `spacing`   |             `string \| [string, string?]`             |   `'0px'`   |
+|  `columns`   |                  `number \| string`                   |    `12`     |
+| `alignItems` | `'start' \| 'center' \| 'end' \| 'stretch' \| 'auto'` | `'stretch'` |
+| `component`  |                       `string`                        |   `'div'`   |
 
 ### GridItem
 
-|    Name     |   Type   | Default |
-|:-----------:|:--------:|:-------:|
-|   `size`    | `number` |   `1`   |
-| `component` | `string` | `'div'` |
+|    Name     |                         Type                          | Default  |
+|:-----------:|:-----------------------------------------------------:|:--------:|
+|   `size`    |                  `number \| string`                   |   `1`    |
+| `alignSelf` | `'start' \| 'center' \| 'end' \| 'stretch' \| 'auto'` | `'auto'` |
+| `component` |                       `string`                        | `'div'`  |
 
 ## License
 
