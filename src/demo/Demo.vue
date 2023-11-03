@@ -1,9 +1,17 @@
 <template>
-  <Grid spacing="8px" column-spacing="10px">
-    <GridItem :size="6">First item</GridItem>
-    <GridItem :size="6">Second item</GridItem>
-    <GridItem :size="12">Third item</GridItem>
-  </Grid>
+  <div class="container">
+    <Grid spacing="10px" row-spacing="20px">
+      <GridItem :size="6">
+        <div class="item" />
+      </GridItem>
+      <GridItem :size="6">
+        <div class="item" />
+      </GridItem>
+      <GridItem :size="12">
+        <div class="item" />
+      </GridItem>
+    </Grid>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -12,6 +20,16 @@ import { Grid, GridItem } from '../';
 
 <style>
 body {
-  margin: 0;
+  background-color: #f3f6f9;
+}
+
+.item {
+  background-color: #ffffff;
+  box-shadow:
+    0 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  min-height: 50px;
 }
 </style>
