@@ -4,7 +4,7 @@
       <GridItem :size="6">
         <div class="item" />
       </GridItem>
-      <GridItem :size="6">
+      <GridItem :size="5" :offset="1">
         <div class="item" />
       </GridItem>
       <GridItem :size="12">

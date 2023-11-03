@@ -41,7 +41,8 @@ import { Grid, GridItem } from '@vuelib/grid';
 
 |    Name     |                         Type                          | Default  |
 |:-----------:|:-----------------------------------------------------:|:--------:|
-|   `size`    |                  `number \| string`                   |   `1`    |
+|   `size`    |                  `string \| number`                   |   `1`    |
+|  `offset`   |                  `string \| number`                   |   `0`    |
 | `alignSelf` | `'start' \| 'center' \| 'end' \| 'stretch' \| 'auto'` | `'auto'` |
 | `component` |                       `string`                        | `'div'`  |
 
