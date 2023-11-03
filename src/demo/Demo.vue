@@ -1,5 +1,5 @@
 <template>
-  <Grid :spacing="['8px', '16px']">
+  <Grid spacing="8px" column-spacing="10px">
     <GridItem :size="6">First item</GridItem>
     <GridItem :size="6">Second item</GridItem>
     <GridItem :size="12">Third item</GridItem>

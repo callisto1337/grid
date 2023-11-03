@@ -12,7 +12,7 @@ npm i @vuelib/grid
 
 ```vue
 <template>
-  <Grid :spacing="['8px', '16px']">
+  <Grid spacing="8px" column-spacing="10px">
     <GridItem :size="6">First item</GridItem>
     <GridItem :size="6">Second item</GridItem>
     <GridItem :size="12">Third item</GridItem>
@@ -28,12 +28,14 @@ import { Grid, GridItem } from '@vuelib/grid';
 
 ### Grid
 
-|     Name     |                         Type                          |   Default   |
-|:------------:|:-----------------------------------------------------:|:-----------:|
-|  `spacing`   |             `string \| [string, string?]`             |   `'0px'`   |
-|  `columns`   |                  `number \| string`                   |    `12`     |
-| `alignItems` | `'start' \| 'center' \| 'end' \| 'stretch' \| 'auto'` | `'stretch'` |
-| `component`  |                       `string`                        |   `'div'`   |
+|      Name       |                         Type                          |   Default   |
+|:---------------:|:-----------------------------------------------------:|:-----------:|
+|    `spacing`    |                  `string \| number`                   |     `0`     |
+|  `rowSpacing`   |                  `string \| number`                   |     `0`     |
+| `columnSpacing` |                  `string \| number`                   |     `0`     |
+|    `columns`    |                  `string \| number`                   |    `12`     |
+|  `alignItems`   | `'start' \| 'center' \| 'end' \| 'stretch' \| 'auto'` | `'stretch'` |
+|   `component`   |                       `string`                        |   `'div'`   |
 
 ### GridItem
 

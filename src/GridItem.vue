@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, CSSProperties } from 'vue';
+import { computed, CSSProperties, inject } from 'vue';
 import { AlignContent, Columns } from './types';
 
 export interface GridItemProps {
@@ -19,12 +19,17 @@ const props = withDefaults(defineProps<GridItemProps>(), {
   alignSelf: 'auto',
   component: 'div',
 });
+const columns = inject('columns');
+const rowSpacing = inject('rowSpacing');
+const columnSpacing = inject('columnSpacing');
 const styleProperties = computed<CSSProperties>(() => {
   const size = props.size;
   const alignSelf = props.alignSelf;
 
   return {
-    gridColumnStart: `span ${size}`,
+    width: `calc(100% * ${size} / ${columns})`,
+    padding: `calc(${rowSpacing} / 2) calc(${columnSpacing} / 2)`,
+    boxSizing: 'border-box',
     alignSelf,
   };
 });
